@@ -6,9 +6,9 @@ string swap1 (string s)
         for (int j=i;j<s.size();j++)
         {
             if (s[i]>s[j])
-                swap(s[i],s[j])
+                swap(s[i],s[j]);
         }
-
+        
     }
     return s;
 }
