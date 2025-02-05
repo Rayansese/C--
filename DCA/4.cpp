@@ -8,7 +8,7 @@ string swap1 (string s)
             if (s[i]>s[j])
                 swap(s[i],s[j])
         }
-
+        
     }
     return s;
 }
