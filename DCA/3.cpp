@@ -16,6 +16,7 @@ cin >> s;
 //
 //
 //
+//
 for (int i=0;i<s.size();i++)
 {
     if(fun(s[i]-'0')==1)
