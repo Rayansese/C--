@@ -10,7 +10,7 @@ int fun (int x)
 }
 int main () {
 string s;
-cout << "hi";
+cout << "hiiii";
 int sum=0;
 cin >> s;
 //
