@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
-#include <cstddef>
+//#include <cstddef>
 
 using namespace std;
 /*int findd (int a,int b,int c)
@@ -16,7 +16,7 @@ int main ()
 	int sum=0;
 	cin >> z;
 	vector<int> vec ;
-	for (int i=0 ;i < z;i++) {
+	for (int i=0 ; i < z;i++) {
 		cin >> vec[i];
 	}
 	for (int i=0;i < z;i++)
@@ -25,12 +25,12 @@ int main ()
 		auto h = find (vec.end(),vec.begin(),i); 
 		// fix the code
 
-		if ( x==h)
+		if ( x!=h)
 		{
 		sum++;	
 		}
 		
 	}
-	cout << sum;
+	cout << "sum";
 	return 0;
 }
