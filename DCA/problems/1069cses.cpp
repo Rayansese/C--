@@ -38,7 +38,7 @@ cin >> str;
 	for(int i=0;i<str.size();i++)
  	{
  		if
- (str[i]=='A'&&(str[i+1]=='A'||i==str.size()-1))
+ (str[i]=='A'&&(str[i+1]=='A'||i==str.size()-1||str[i-1]=='A'))
  {
 	a++;
 	c=0;
@@ -46,7 +46,7 @@ cin >> str;
 	t=0;
  }
 
- 		else if (str[i]=='C'&&(str[i+1]=='C'||i==str.size()-1))
+ 		else if (str[i]=='C'&&(str[i+1]=='C'||i==str.size()-1||str[i-1]=='C'))
 		{
 			c++;		
 			a=0;
@@ -55,7 +55,7 @@ cin >> str;
 		}
 
 		else if 
- (str[i]=='G'&&(str[i+1]=='G'||i==str.size()-1))
+ (str[i]=='G'&&(str[i+1]=='G'||i==str.size()-1||str[i-1]=='G'))
  {
 			g++;
 			a=0;
@@ -63,7 +63,7 @@ cin >> str;
 			t=0;
  }
 
-else if (str[i]=='T'&&(str[i+1]=='T'||i==str.size()-1)){
+else if (str[i]=='T'&&(str[i+1]=='T'||i==str.size()-1||str[i-1]=='T')){
 	t++;
 	c=0;
 	g=0;
