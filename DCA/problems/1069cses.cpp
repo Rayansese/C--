@@ -47,7 +47,7 @@ if
 	a=0;
 	}
  }
-}
+
 
 else if
  (str[i]=='A'&&(str[i+1]=='A'||i==str.size()-1||str[i-1]=='A')){
@@ -59,7 +59,7 @@ else if
 	g=0;
 	}
  }
-}
+
 
 else if
  (str[i]=='C'&&(str[i+1]=='C'||i==str.size()-1||str[i-1]=='C')){
@@ -84,9 +84,10 @@ else if
 	}
  }
 
-     
+   }  
      cout << max(max(a,c),max(g,t));
  
 
 
 
+ }
