@@ -15,7 +15,7 @@ int main (){
 
         for (int j=0;j<5;j++)
         {
-        if arr[i][j]
+        if arr[i][j]==
         }
     }
 
