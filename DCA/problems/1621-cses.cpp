@@ -34,7 +34,7 @@ int main ()
 	cout << sum;
 	return 0;
 }
-*/
+
 
 
 
@@ -71,5 +71,33 @@ int main() {
     }
 
     cout << sum << endl;
+    return 0;
+}*/
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    vector<int> vec(n);
+    for (int i = 0; i < n; i++) {
+        cin >> vec[i];
+    }
+
+    sort(vec.begin(), vec.end());
+
+    int unique_count = 1;
+    for (int i = 1; i < n; i++) {
+        if (vec[i] != vec[i - 1]) {
+            unique_count++;
+        }
+    }
+
+    cout << unique_count << endl;
+
     return 0;
 }

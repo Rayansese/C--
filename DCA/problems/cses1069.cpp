@@ -1,41 +1,23 @@
 #include <iostream>
 using namespace std;
-int main()
-{
-	int a = 0, b = 0;
-	string str;
-	cin >> str;
-	for (int i = 0; i < str.size(); i++)
-	{
-		if (i < str.size() - 1)
-		{
-			if (str[i] == str[i + 1] )
-			{
-				a++;
-				if (a > b)
-					b = a;
-			}
-			else if (str[i]== str[i-1])
-			{
-			b++;
-			a=0;
-			}
-			else
-				a = 0;
-		}
-		else
-		{
-			if (str[i] == str[i - 1])
-			{
-				a++;
-				if (a > b)
-					b = a;
-			}
-		}
-	}
-	if (b==0)
-	cout << "1";
-	else
-	cout << b;
-	return 0;
+
+int main() {
+    string s;
+    cin >> s;
+    
+    int maxLen = 1, currLen = 1;
+    
+    for (size_t i = 1; i < s.length(); i++) {
+        if (s[i] == s[i - 1]) {
+            currLen++;
+        } else {
+            maxLen = max(maxLen, currLen);
+            currLen = 1;
+        }
+    }
+    
+    maxLen = max(maxLen, currLen);
+    cout << maxLen << endl;
+    
+    return 0;
 }
