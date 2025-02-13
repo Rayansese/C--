@@ -38,24 +38,38 @@ int main ()
 
 
 
-
 #include <iostream>
-#include <set>
+#include <vector>
 
 using namespace std;
 
 int main() {
     int n;
     cin >> n;
-
-    set<int> unique_numbers;  // لإنشاء مجموعة تخزن القيم الفريدة فقط
-
+    
+    vector<int> numbers(n);
     for (int i = 0; i < n; i++) {
-        int num;
-        cin >> num;
-        unique_numbers.insert(num);  // يتم إضافة كل رقم إلى المجموعة
+        cin >> numbers[i];
+    }
+    
+    int sum = 0;
+    bool found;
+    
+    for (int i = 0; i < n; i++) {
+        found = false;
+        
+        for (int j = 0; j < i; j++) {
+            if (numbers[i] == numbers[j]) {
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            sum++;
+        }
     }
 
-    cout << unique_numbers.size() << endl;  // عدد العناصر الفريدة
+    cout << sum << endl;
     return 0;
 }
