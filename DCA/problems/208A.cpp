@@ -17,7 +17,7 @@ for (int i=0;i<s.size();i++)
      if (s[i]=='W'&&
      s[i+1]=='U'&&
      s[i+2]=='B'&&
-     i<s.size()-3
+     i<s.size()-2
      )
      {
  //    arr[g]=' ';
