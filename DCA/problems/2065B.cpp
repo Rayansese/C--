@@ -7,7 +7,17 @@ int main ()
 	{
 string s;
 cin >> s;
-for ()	
+for (int j=0;j<s.size();j++)	
+{
+if (s[j]==s[j+1])
+{
+	cout << "1";
+	break;	
+}
+
 	
-}	
+}
+cout << s.size();	
+}
+
 }
