@@ -39,6 +39,12 @@ v[1]=v[1]/(n/2);
 vec=v;
 n=2;
     }
+    if ((vec[0]=vec[1])/2==x)
+    {
+
+        cout << "YES" ;
+        break;
+    }
 }
 
 }
