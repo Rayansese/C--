@@ -1,12 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include <deque>
 using namespace std;
 int main ()
 {
 	int n;cin >> n;
-	int y=0;
+	
 	for (int i=0;i<n;i++)
 	{
+        int y=0;
 		int t;cin >> t; 
 		deque<char> q (t) ;
 		//for (int j=0;j<t;j++)
@@ -17,20 +18,20 @@ int main ()
 //			q.push_back(c);
 //		}
 
-for (auto it = q.begin(); it != q.end();it++ ){
+for (int k=0;k<t;k++){
 			char c;cin >> c;
 			q.push_back(c);
 	
 		}
 
-
+		
     for (auto it = q.begin(); it != q.end();it++ ){
         if (*it== ')' && *it-1=='(')
 			{
 			q.erase(it);
 			q.erase(it -1);
 			}
-            
+			
     }
 		auto d = q.begin() ;
 		int s=q.size()/2;
