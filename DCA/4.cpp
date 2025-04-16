@@ -25,7 +25,7 @@ for (int k=0;k<t;k++){
 		}
 
 		
-    for (auto it = q.begin(); it != q.end();it++ ){
+    for (auto it = q.begin(); it != q.end()&& it +1 !=q.end();){
         if (*it== ')' && *it-1=='(')
 			{
 			q.erase(it);
