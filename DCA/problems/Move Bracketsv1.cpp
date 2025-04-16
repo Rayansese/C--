@@ -7,7 +7,7 @@ int main ()
 	int y=0;
 	for (int i=0;i<n;i++)
 	{
-		int t;cin >> t;
+		int t;cin >> t; 
 		deque<char> q ;
 		//for (int j=0;j<t;j++)
 //		{
